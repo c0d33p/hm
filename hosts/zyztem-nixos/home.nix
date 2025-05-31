@@ -31,6 +31,7 @@
     '';
     shellAliases = {
       ll = "ls -l";
+      lt = "lsd --tree";
       update = "sudo nixos-rebuild switch";
     };
   };

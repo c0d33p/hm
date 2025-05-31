@@ -1,7 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
   
   programs = {
     bash.enable = true;
