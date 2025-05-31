@@ -21,7 +21,6 @@
   # Packages to install
   home.packages = with pkgs; [
     firefox
-    htop
   ];
 
   # Program-specific configurations
