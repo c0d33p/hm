@@ -1,9 +1,21 @@
 { config, pkgs, lib, ... }:
 
 {
-  
   programs = {
     bash.enable = true;
+
+    zoxide = {
+      enable = true;
+      enableBashIntegration= true;
+      };
+
+    atuin = {
+      enable = true;
+      settings = {
+        search_mode = "fuzzy";
+	};
+    };
+
     git = {
       enable = true;
       userName = "Maciej Lewkowicz";
@@ -17,6 +29,7 @@
   
   # Default programs
   home.packages = with pkgs; [
+    zoxide
     remnote
     vesktop
     qalculate-qt
