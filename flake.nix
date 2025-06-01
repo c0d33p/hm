@@ -23,6 +23,7 @@
   outputs = { nixpkgs, nixpkgs-unstable, home-manager, disko, nix-flatpak, ... }:
     let
       system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
       pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
     in
     {

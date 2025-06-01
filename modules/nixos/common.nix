@@ -31,6 +31,8 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    screen
+    tmux
     curl
     git
     croc
