@@ -5,6 +5,7 @@
     ../../modules/home-manager/common.nix
     ../../modules/home-manager/terminals
     ../../modules/home-manager/editors
+    ../../modules/home-manager/programming
 
     ../../modules/home-manager/flatpak.nix # Like configure plugin
     nix-flatpak.homeManagerModules.nix-flatpak # Like install plugin
