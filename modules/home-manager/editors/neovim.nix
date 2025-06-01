@@ -40,7 +40,7 @@
       precognition-nvim
       
       # Color scheme
-      gruvbox-nvim
+      tokyonight-nvim
     ];
     
     extraLuaConfig = ''
@@ -63,7 +63,7 @@
       vim.opt.mouse = "a"
       
       -- Color scheme
-      require("gruvbox").setup({
+      require("tokyonight").setup({
         undercurl = true,
         underline = true,
         bold = true,
@@ -86,7 +86,7 @@
         dim_inactive = false,
         transparent_mode = false,
       })
-      vim.cmd("colorscheme gruvbox")
+      vim.cmd("colorscheme tokyonight")
       
       -- Set nvim-notify as the default notification function
       vim.notify = require("notify")
@@ -216,7 +216,7 @@
       })
       
       -- TypeScript/JavaScript
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
       
@@ -282,7 +282,7 @@
       -- Configure Lualine
       require("lualine").setup({
         options = {
-          theme = "gruvbox",
+          theme = "tokyonight",
           component_separators = { left = "", right = ""},
           section_separators = { left = "", right = ""},
         },
